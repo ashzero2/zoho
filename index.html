@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb842231c7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Pet Shop</h1>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" id="home" class="active">Home</a>
+        <a href="#news">Gallery</a>
+        <a href="#contact">Templates</a>
+        <a href="#about">Themes</a>
+        <a href="#about">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <p>|||</p>
+        </a>
+    </div>
+    <div id="top">
+        <h2>Ash Pet Shop</h2>
+        <p>Welcome to Ash's pet shop, which is a well established pet shop in Chennai. We provide high quality products
+            and accessories for dogs and other household pets with best price.</p>
+    </div>
+    <div class="box-img">
+        <div>
+            <img src="images/accs.webp" alt="">
+            <p>Accessories</p>
+        </div>
+        <div>
+            <img src="images/groom.webp" alt="">
+            <p>Grooming</p>
+        </div>
+        <div>
+            <img src="images/toys.webp" alt="">
+            <p>Toys</p>
+        </div>
+        <div>
+            <img src="images/treats.webp" alt="">
+            <p>Treats</p>
+        </div>
+        <div>
+            <img src="images/bed.webp" alt="">
+            <p>Beds</p>
+        </div>
+        <div>
+            <img src="images/others.webp" alt="">
+            <p>Others</p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
