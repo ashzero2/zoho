@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 * {
   margin: 0;
@@ -12,37 +13,38 @@ body {
 .box-img {
   display: grid;
   column-gap: 10%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   grid-template-rows: 250px 250px;
   grid-template-columns: 250px 250px 250px;
   padding-left: 15%;
 }
 
 .box-img > div > img {
-  margin-left: 10%;
+  border-radius: 0.4em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 200px;
   max-height: 200px;
 }
 
 .box-img > div > p {
-  text-align: center;
-  font-family: "Hubballi", cursive;
+      font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.3em;
+  margin-left: 23%;
 }
 
 #top > h2 {
-  font-family: "Hubballi", cursive;
+      font-family: 'Source Sans Pro', sans-serif;
   padding-top: 2%;
   padding-left: 10%;
   color: #3c3941;
 }
 
 #top > p {
-  font-family: "Hubballi", cursive;
+      font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.3em;
   color: #605c68;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 50px;
 }
 
 #header {
@@ -53,7 +55,7 @@ body {
 #header h1 {
   color: #32373b;
   margin-left: 10%;
-  font-family: "Hubballi", cursive;
+      font-family: 'Source Sans Pro', sans-serif;
   font-size: 3em;
 }
 
@@ -65,7 +67,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #f4b860;
+  background-color: #e1c3b9;
   overflow: hidden;
 }
 
@@ -75,8 +77,7 @@ body {
   display: block;
   color: rgb(63, 62, 62);
   text-align: center;
-  font-family: "Montserrat bold", sans-serif;
-  font-style: italic;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
@@ -92,17 +93,27 @@ body {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  font-style: oblique;
   color: rgb(61, 61, 61);
-  margin-left: 10%;
-  border-color: #f4b860;
+  border-color: #e1c3b9;
   border-bottom-color: #c83e4d;
   border-style: solid;
 }
 
+.topnav > #home {
+  margin-left: 10%;
+}
+ 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+#line > hr {
+  margin: 2% 10% 2% 10%;
+}
+
+#footer {
+  background-color: #e1c3b9;
 }
 
 @media screen and (max-width: 600px) {
@@ -117,7 +128,7 @@ body {
     display: grid;
     grid-template-rows: 250px 250px 250px 250px 250px;
     grid-template-columns: 250px;
-    padding-left: 20%;
+    padding-left:25%;
   }
   .box-img > div > img {
     max-width: 200px;
