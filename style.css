@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
 
 * {
   margin: 0;
 }
 
 body {
-  background-color: #F4D6CC;
+  background-color: #f4d6cc;
 }
 
 .box-img {
@@ -25,19 +25,19 @@ body {
 
 .box-img > div > p {
   text-align: center;
-  font-family: 'Hubballi', cursive;
+  font-family: "Hubballi", cursive;
   font-size: 1.3em;
 }
 
 #top > h2 {
-  font-family: 'Hubballi', cursive;
+  font-family: "Hubballi", cursive;
   padding-top: 2%;
   padding-left: 10%;
   color: #3c3941;
 }
 
 #top > p {
-  font-family: 'Hubballi', cursive;
+  font-family: "Hubballi", cursive;
   font-size: 1.3em;
   color: #605c68;
   margin-left: 10%;
@@ -46,14 +46,14 @@ body {
 }
 
 #header {
-  background-color: #F4D6CC;
+  background-color: #f4d6cc;
   padding: 10px;
 }
 
 #header h1 {
-  color: #32373B;
+  color: #32373b;
   margin-left: 10%;
-  font-family: 'Hubballi', cursive;
+  font-family: "Hubballi", cursive;
   font-size: 3em;
 }
 
@@ -65,7 +65,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #F4B860;
+  background-color: #f4b860;
   overflow: hidden;
 }
 
@@ -95,8 +95,8 @@ body {
   font-style: oblique;
   color: rgb(61, 61, 61);
   margin-left: 10%;
-  border-color: #F4B860;
-  border-bottom-color: #C83E4D;
+  border-color: #f4b860;
+  border-bottom-color: #c83e4d;
   border-style: solid;
 }
 
@@ -119,7 +119,7 @@ body {
     grid-template-columns: 250px;
     padding-left: 20%;
   }
-  .box-img >div> img {
+  .box-img > div > img {
     max-width: 200px;
     max-height: 200px;
   }
@@ -131,7 +131,7 @@ body {
     grid-template-columns: 250px 250px;
     padding-left: 13%;
   }
-  .box-img >div> img {
+  .box-img > div > img {
     max-width: 200px;
     max-height: 200px;
   }
