@@ -176,7 +176,8 @@ body {
     max-height: 200px;
   }
   #footer {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
   }
@@ -199,6 +200,12 @@ body {
   .box-img > div > img {
     max-width: 200px;
     max-height: 200px;
+    text-align: center;
+  }
+  #footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
 }
