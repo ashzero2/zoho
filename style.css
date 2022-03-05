@@ -7,6 +7,7 @@
 
 body {
   background-color: #f4d6cc;
+  color: #32373b;
 }
 
 /* Header CSS */
@@ -172,13 +173,14 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  margin: 20px 10% 20px 10%;  
+  margin: 20px 10% 20px 10%;
 }
 
 #category > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  row-gap: 20px;
   column-gap: 30px;
   justify-content: center;
 }
@@ -196,6 +198,30 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 200px;
   max-height: 200px;
+}
+
+/* Customer Review CSS */
+
+#rtop {
+  text-align: center;
+  margin: 50px;
+}
+
+#review {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20%;
+  padding: 50px 10% 50px 10%;
+}
+
+#review > div {
+  max-width: 200px;
+  text-align: center;
+}
+
+#review > div > h3 {
+  font-size: 2em;
 }
 
 /* Media Queries - Responsiveness */
