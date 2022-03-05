@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/bb842231c7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Pet Shop</h1>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" id="home">Home</a>
+        <a href="" class="active">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="#about">Themes</a>
+        <a href="#footer">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <p><i class="ph-list" style="font-size:1.5em;"></i></p>
+        </a>
+    </div>
+    <div class="gallery">
+        <div>
+            <img src="../images/accs.webp" alt="">
+        </div>
+        <div>
+            <img src="../images/groom.webp" alt="">
+        </div>
+        <div>
+            <img src="../images/toys.webp" alt="">
+        </div>
+        <div>
+            <img src="../images/treats.webp" alt="">
+        </div>
+        <div>
+            <img src="../images/bed.webp" alt="">
+        </div>
+        <div>
+            <img src="../images/others.webp" alt="">
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <h3>Best Selling</h3>
+            <a href="">Chew Toy</a>
+            <a href="">Cushion</a>
+            <a href="">CatNip</a>
+            <a href="">Dog Foods</a>
+        </div>
+        <div>
+            <h3>Partners</h3>
+            <a href="">Pedigree</a>
+            <a href="">Catshions</a>
+            <a href="">Cheems</a>
+            <a href="">Doge</a>
+        </div>
+        <div>
+            <h3>Build Using</h3>
+            <a href="">HTML5</a>
+            <a href="">CSS</a>
+            <a href="">JS</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <a href="">Facebook</a>
+            <a href="">YouTube</a>
+            <a href="">Twitter</a>
+            <div id="cicons">
+                <a href=""><i class="ph-instagram-logo" style="font-size:1.5em;"></i></a>
+                <a href=""><i class="ph-whatsapp-logo" style="font-size:1.5em;"></i></a>
+                <a href=""><i class="ph-discord-logo" style="font-size:1.5em;"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
