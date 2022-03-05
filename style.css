@@ -85,21 +85,21 @@ body {
   color: #b89a90;
 }
 
-/* Img Grid CSS */
+/* Img Flex CSS */
 
 .box-img {
-  display: grid;
-  column-gap: 10%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  grid-template-rows: 250px 250px;
-  grid-template-columns: 250px 250px 250px;
-  grid-auto-flow: column;
-  padding-left: 15%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0px 10% 20px 10%;
+  justify-content: center;
 }
 
 .box-img > div {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .box-img > div > img {
@@ -107,12 +107,7 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 250px;
   max-height: 200px;
-}
-
-.box-img > div > p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.3em;
-  text-align: center;
+  margin: 10px;
 }
 
 /* Bottom Bar CSS */
@@ -123,6 +118,7 @@ body {
   column-gap: 10%;
   background-color: #e1c3b9;
   justify-content: center;
+  padding: 0px 10% 0px 10%;
 }
 
 #footer > div {
@@ -147,6 +143,7 @@ body {
 #footer > div > div {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 5px;
   column-gap: 20%;
 }
@@ -211,20 +208,6 @@ body {
     float: right;
     display: block;
   }
-  .box-img {
-    display: grid;
-    grid-template-rows: 250px 250px 250px 250px 250px;
-    grid-template-columns: 250px;
-  }
-  .box-img > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .box-img > div > img {
-    max-width: 200px;
-    max-height: 200px;
-  }
   #footer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -233,30 +216,6 @@ body {
   }
   #footer > div > div {
     justify-content: center;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-  .box-img {
-    display: grid;
-    row-gap: 50px;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: 200px 200px;
-  }
-  .box-img > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .box-img > div > img {
-    max-width: 200px;
-    max-height: 200px;
-    text-align: center;
-  }
-  #footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
   }
 }
 
