@@ -25,7 +25,6 @@ body {
 }
 
 /* NavBar CSS */
-
 .topnav {
   background-color: #e1c3b9;
   overflow: hidden;
@@ -204,24 +203,55 @@ body {
 
 #rtop {
   text-align: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 #review {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 20%;
-  padding: 50px 10% 50px 10%;
+  row-gap: 50px;
+  column-gap: 80px;
+  padding: 10px 10% 50px 10%;
+  justify-content: center;
 }
 
 #review > div {
   max-width: 200px;
-  text-align: center;
 }
 
 #review > div > h3 {
   font-size: 2em;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* CSS */
+#button {
+  background: #C83E4D;
+  border-radius: 999px;
+  box-shadow: #C83E4D 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  margin-bottom: 20px;
+  width: fit-content;
+  border: 0;
+}
+
+#button:hover {
+  background-color: #fa707f;
+  color: white;
 }
 
 /* Media Queries - Responsiveness */

@@ -30,17 +30,32 @@
     </div>
     <div id="review">
         <div>
-            <h3>Cheems</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a officiis ut placeat ea, reiciendis consectetur recusandae pariatur qui maxime dolores sunt, obcaecati perspiciatis eius eveniet, libero perferendis praesentium quaerat?</p>
+            <h3>Ash</h3>
+            <h5><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i
+                    class="ph-star"></i></h5>
+            <p>Great Choices to choose from, excellent quality as expected from India's best pet shop.</p>
         </div>
         <div>
-            <h3>Cheems</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ea provident ratione itaque amet dolores cumque sunt, blanditiis, et ipsa officiis eum placeat eos tempora illum. Facilis, quis illum. Quia.</p>
+            <h3>Daisy</h3>
+            <h5><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i
+                    class="ph-star-half"></i></h5>
+            <p>OMG!! I've never seen a shop delivery fast as this one does, Truely an amazing shop to buy pet products.
+            </p>
         </div>
         <div>
-            <h3>Cheems</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae alias architecto quod expedita voluptates magni, quibusdam et aliquid praesentium hic autem obcaecati dicta corporis tempore eveniet tenetur a harum.</p>
+            <h3>Henna</h3>
+            <h5><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i></h5>
+            <p>One of the ultimate petshop to shop with.I must say I never had any problem .</p>
         </div>
+        <div>
+            <h3>Connor</h3>
+            <h5><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i class="ph-star"></i><i
+                    class="ph-star-half"></i></h5>
+            <p>Just wow, the customer service was so good and their response time is almost perfect .</p>
+        </div>
+    </div>
+    <div id="submit">
+        <button id="button" onclick="addReview()">Submit Review</button>
     </div>
     <div id="footer">
         <div>
@@ -81,6 +96,20 @@
                 x.className += " responsive";
             } else {
                 x.className = "topnav";
+            }
+        }
+        function addReview() {
+            var name = prompt("Enter Your Name");
+            var star = prompt("Rate us by stars");
+            var review = prompt("Enter Your Review");
+            if(name!=null && review!=null) {
+                document.getElementById("review").innerHTML += `
+                    <div>
+                        <h3>${name}</h3>
+                        <h5>${star} / 5 stars</h5>
+                        <p>${review}</p>
+                    </div>
+                `;
             }
         }
     </script>
