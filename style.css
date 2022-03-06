@@ -287,6 +287,13 @@ body {
   #footer > div > div {
     justify-content: center;
   }
+  .topnav > input {
+    margin-right: 0%;
+  }
+  
+  .topnav > input:focus {
+    margin-right: 0%;
+  }
 }
 
 @media screen and (max-width: 800px) {
